@@ -4,12 +4,12 @@
     <div class="dropdown-area" ng-show="dropdown">
         <div class="dropdown">
             <ul>
-                <li ng-repeat="item in items" ng-click="itemClick(item.id)" data-id="@{{ item.id }}">@{{item.item_text}}</li>
+                <li ng-repeat="item in items" ng-click="itemClick(item.id)" data-id="{{ item.id }}">{{item.item_text}}</li>
             </ul>
         </div>
     </div>
     <div class="item-info" >
-        <div>@{{ data.id }}</div>
-        <div>@{{ data.item_text }}</div>
+        
+        <div>{{ data.item_text }}</div>
     </div>
 </div>
